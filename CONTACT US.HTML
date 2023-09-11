@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT US
+
+    </title><style>
+        input[type="text"] {background-color: whitesmoke; width: 200px;padding: 10px; border: 5px;cursor: pointer;
+       font-size: 20px; border-radius: 5px; font-family: Arial, Helvetica, sans-serif;
+        }
+        .custom-input{width: 200px;padding: 10px; border: 1px;border-radius: 5px; font-size: 20px; font-family: Arial, Helvetica, sans-serif;
+            background-color: whitesmoke;margin: 10px; cursor:pointer;
+
+
+        }
+        header {text-align: left;}
+        h1 b {color: yellow;} 
+        body {text-align: center;background-image: url(image/san.jpg);color: red; background-size: cover;background-repeat: repeat;
+        text-size-adjust: 20px; ;font-size: larger; }
+input[type="radio"] {position: relative;cursor: pointer;padding-left: 30px;width: 20px; height: 20px;border-radius: 50%;}
+@keyframes move-right {
+0% {transform: translateX(-100%); }
+100% {transform: translateX(100%); }
+
+}
+.animated-text {animation: move-right 4s linear infinite;}
+h3 {color: blue;font-style: italic;}
+@keyframes text-fade {
+0% {opacity: 0;}
+50% {opacity: 1;}
+100% {opacity: 0;}
+
+}
+.animate-text {animation: text-fade 2s linear infinite;}
+.animate-text {color: yellow;}
+
+input[type="submit"] {background-color: blue;padding: 10px 20px; border: none; border-radius: 5px;cursor: pointer;}
+#message {font-weight: bold;font-size: larger;}.navbar {background-color: #007BFF;overflow: hidden;text-align: center;}
+.navbar a {color: aqua;text-decoration: none;padding: 10px 20px;display: inline;}
+.navbar a:hover {background-color: black;}
+.navbar .left{float: left;}
+.navbar .center{float: center;}
+.navbar .right{float: right;}
+.navbar .center{margin: 0 auto;display: inline;}
+ </style>
+
+
+</style></head>
+<body>
+    <div class="navbar">
+        <li><a href="HOME.HTML" class="left">Home</a></li>
+        <li><a href="ABOUT US.HTML" class="center">ABOUT US</a></li>
+          <li><a href="SERVICE.HTML" class="right-center">SERVICES</a></li>
+          <li><a href="CONTACT US.HTML" class="right">CONTACT US</a></li>
+        
+          </div>  
+    <header><img src="image/simeon.png" width="120px" height="120px"></header>
+<h1 class="animate-text">WE ARE HERE TO SERVE YOU AT OUR LEVEL BEST</h1>    
+ <p>simeonwangira@gmail.com</p>
+ <p><b>Telephon Number</b></p>
+ <p><b>0741750911</b></p>
+ <p><b>0761476011</b></p>
+ <p>Thank you for the message:</p>
+ <p><strong id="display Message"></strong></p>
+ <script>
+var urlparam = new URLSearchParams(Window.location.search);
+var message = urlparams.get("message");
+if (message) {document.getElementById("displayMessage").textContent = message;}
+
+ </script>
+ <p><form method="post">First Name:
+<input type="text" name="First name"><br>
+Last Name:<input type="text " class="custom-input"
+ name="last name" width="120" height="120">
+<p><b>Gender:</b></p><input type="radio" value="radio button">Male
+<input type="radio" value="radio button">Female
+
+ </form>
+ <form id="messageForm">
+    <label for="message">Enter Your Message</label><br>
+    <textarea id="message" name="message" rows="4" cols="40" required></textarea>
+    <input type="submit" value="send your message">
+
+ </form>
+ <h3 class="animated-text">WBS Plumbing Solution Uganda Limited</h3>
+
+</p>   
+</body>
+</html>

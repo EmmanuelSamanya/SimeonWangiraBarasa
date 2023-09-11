@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title><style>
+body {text-align: center; background-image: url(image/san.jpg) ;background-size:cover ;background-repeat: no-repeat;background-attachment: fixed;color: yellow;font-size: larger;}
+input[type="button"] {background-color: green;color:yellow ; padding: 10px 20px;border: none;border-radius: 5px;cursor: pointer;}
+.whatsapp-button {background-color: green;color: white; padding: 10px 20px; border: none; border-radius:5px ; cursor: pointer;
+text-decoration: none;
+}
+.styled-image {;}
+.facebook-link {color: gold; text-decoration: none; font-weight: bold; background-color: blue; padding: 5px 10px;
+border-radius: 5px; cursor: pointer; text-decoration: none;
+}
+input[type="text"] {width: 200px;height: 100px; font-size: 18;}
+text {letter-spacing: normal; size: 1.5; line-height: normals;}
+h1 b {color:blue;font-style: italic;}
+header {text-align: left;}
+.twitter-link {color: blueviolet;text-decoration:none ;font-weight: bold;  background-color: aqua;padding: 5px; border: 0cap;border-radius: 5px;cursor: pointer; text-decoration: none;}
+input[type="submit"] {background-color:blueviolet;color: white;padding: 10PX 20PX;border: none;border-radius: 5px; cursor: pointer;}
+label {font-weight: bold;}
+textarea {width: 20%;padding: 10px;border: 1px solid #ccc; border-radius: 5px;margin-bottom: 10px; }
+#displaymessage {color: #007BFF;font-weight:bold;}
+@keyframes text-fade {
+0% {opacity: 0; }
+50% {opacity: 1; }
+100 {opacity: 0; }
 
+}
+.animated-text {animation: text-fade 2s linear infinite;}
+h3 {color: blue;font-style: italic;}
+@keyframes move-right {
+0% {transform: translateX(-100%) }
+100% {transform: translateX(100%); }
+}
+.animate-text {animation: move-right 4s linear infinite;}
+.navbar {background-color: #007BFF;overflow: hidden;text-align: center;}
+.navbar a {color: aqua;text-decoration: none;padding: 10px 20px;display: inline;}
+.navbar a:hover {background-color: black;}
+.navbar .left{float: left;}
+.navbar .center{float: center;}
+.navbar .right{float: right;}
+.navbar .center{margin: 0 auto;display: inline;}
+ </style>
+</head>
+<body>
+  <div class="navbar">
+<li><a href="HOME.HTML" class="left">Home</a></li>
+<li><a href="ABOUT US.HTML" class="center">ABOUT US</a></li>
+  <li><a href="SERVICE.HTML" class="right-center">SERVICES</a></li>
+  <li><a href="CONTACT US.HTML" class="right">CONTACT US</a></li>
+
+  </div>`
+  <header><img src="image/simeon.png" width="120px" height="120px"></header>
+    <h1 class="animated-text"><b>WBS PLUMBING UGANDA LIMITED</b></h1>
+    <p><i>The best plumbing company in Uganda -Lets make a difference</i></p>
+    <p>Wel come to our super dooper WBS PLUMBER UGANDA LTD</p>
+    <P>At WBS, we`re your trusted partners for all plumbing needs.With ateam of skilled plumbers,we are committed to delivering top notch solution that keep your pipes flowing and spaces  confortable. </P>
+<p>Wether it`s a minor leak, a major repair ,or aplumbing upgrade; we are here to provide you with reliable services that you can count on.</p>
+<form id="messageForm">
+  <label for="message">Type Your Message:</label><br>
+  <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+  <input type="submit" value="submit"><br>
+</form><br>
+<script>
+document.getElementById("messageForm").addEventListener("submit", function(event) {event.preventDefault();var Message = document.getElementById("message").value;
+if (Message.trim() === "") {alert("please enter amessage");return;}
+window.location.href="CONTACT US.HTML?message=" + encodeURIComponent(Message);})
+
+</script>
+<form type="post">
+
+
+<a class="whatsapp-button" href="https://wa.me/+256786906911?text=Hello%20there!">share on whatsapp</a>
+<a href="https://twitter.com/" target="_blank" class="twitter-link">share on twitter</a> 
+<a  href="https://www.facebook.com/Emmanuel Samanya" class="facebook-link">share on facebook</a>
+<h3 class="animate-text">WBS plumbing Solution Uganda Limited</h3>
+
+</body>
+</html>
